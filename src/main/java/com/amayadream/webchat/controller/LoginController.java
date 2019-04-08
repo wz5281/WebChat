@@ -43,7 +43,7 @@ public class LoginController {
         if (user == null) {
             attributes.addFlashAttribute("error", defined.LOGIN_USERID_ERROR);
             return "redirect:/user/login";
-        } else {
+        } else   {
             if (!user.getPassword().equals(password)) {
                 attributes.addFlashAttribute("error", defined.LOGIN_PASSWORD_ERROR);
                 return "redirect:/user/login";
